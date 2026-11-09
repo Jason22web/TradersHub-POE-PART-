@@ -1,0 +1,156 @@
+/* Trade in page CSS as i will be implementing more to this page specifically */
+
+.trade-in-top {
+    display: flex;
+    gap: 2rem;
+    background-color: var(--bg-surface);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-light);
+    margin-top: 1.5rem;
+}
+
+.trade-in-logo {
+    flex: 0 0 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--action-secondary);
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.trade-in-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.trade-in-form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.trade-in-form-group {
+    flex: 1;
+}
+
+.trade-in-form-group label {
+    display: block;
+    font-size: 0.85rem; 
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: var(--text-primary);
+}
+
+.trade-in-form-group input, 
+.trade-in-form-group select,
+.trade-in-form-group textarea {
+    width: 100%;
+    padding: 0.6rem;
+    background-color: var(--bg-surface);
+    color: var(--text-body);
+    border: 1px solid var(--border-medium);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.trade-in-form-action {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.upload-image {
+    background-color: var(--actions-buttons-secondary);
+    color: var(--text-inverse);
+    border: none;
+    padding: 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.submit-button {
+    background-color: var(--actions-buttons);
+    color: var(--text-inverse);
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;        
+}
+
+.verification-section {
+    display: flex;
+    gap: 2rem;
+    background-color: var(--bg-surface-secondary);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-light);
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.verification-image {
+    flex: 0 0 200px;
+}
+
+.verification-text {
+    flex: 1;
+}
+
+.verification-text h3 {
+    margin-bottom: 0.5rem;
+    color: var(--action-dark-box);
+}
+
+.verification-text ul {
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+    color: var(--text-body);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .trade-in-top {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .trade-in-logo { 
+        flex: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .trade-in-form-row { 
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .verification-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .verification-image {
+        flex: none;
+        width: 100%;
+    }
+
+    .verification-text ul {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .submit-button,
+    .upload-image { 
+        width: 100%;
+        padding: 0.8rem;
+    }
+}

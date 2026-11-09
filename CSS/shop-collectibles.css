@@ -1,0 +1,99 @@
+/* CSS for the collectibles and shop page */
+
+/* SHOP PAGE */
+.shop-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+/* COLLECTIBLES PAGE */
+.collectibles-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+/* Shared Product Grid Layout */
+.product-grid,
+.collectibles-product-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Shared Product Card Styling */
+.product-grid article,
+.collectibles-product-grid article {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-grid article:hover,
+.collectibles-product-grid article:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.product-grid article img,
+.collectibles-product-grid article img {
+    width: 100%;
+    height: 180px;           
+    object-fit: cover;        
+    border-radius: 6px;
+    margin-bottom: 0.75rem;
+}
+
+/* Applied --action-accent for Card Names */
+.product-grid article h3,
+.collectibles-product-grid article h3 {
+    font-size: 1.05rem;
+    color: var(--action-accent);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.product-grid article p,
+.collectibles-product-grid article p {
+    font-size: 0.85rem;
+    color: var(--text-body);
+    margin-bottom: 0.5rem;
+}
+
+.collectibles-product-grid article p {
+    font-size: 0.8rem;
+}
+
+.button-shop-collectibles {
+    background-color: var(--actions-buttons);
+    color: var(--text-inverse);
+    border: none;
+    padding: 0.6rem 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.button-shop-collectibles:hover {
+    background-color: var(--action-secondary-hover);
+}
+
+/* Responsive Grid Adjustments */
+@media (max-width: 768px) {
+    .product-grid,
+    .collectibles-product-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

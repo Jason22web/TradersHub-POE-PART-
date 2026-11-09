@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Primary meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradersHub | Card Trade-In & Instant Valuation</title>
+    <meta name="title" content="TradersHub | Card Trade-In & Instant Valuation">
+    <meta name="description"
+        content="Trade in your raw or graded trading cards for competitive cash payouts or boosted store credit at TradersHub. Submit your card details online today.">
+    <meta name="keywords"
+        content="Sell Pokemon Cards SA, Trade In Trading Cards, Card Grading Trade, Sell Yu-Gi-Oh Cards, Store Credit Trading Cards">
+    <meta name="author" content="TradersHub">
+
+    <!-- Secondary meta tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Trade-In Your Cards | TradersHub">
+    <meta property="og:description"
+        content="Turn your extra trading cards into cash or store credit with quick valuation and fair market rates.">
+    <meta property="og:image" content="Images/toxmendoza-pokeball-5128709_640.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="TradersHub is a Card trading retail store offering collectibles and game cards for all to enjoy.">
+    <meta name="keywords" content="TradersHub, Collectibles, Card Games, Retail Store, Trade-In, Buy & Sell">
+    <meta name="author" content="TradersHub">
+    <title>TradersHub | Trade-In</title>
+    <link rel="stylesheet" href="CSS/glabal.css">
+    <link rel="stylesheet" href="CSS/trade.css">
+    <script src="JavaScript/global.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <button type="button" id="theme-switch">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#e3e3e3">
+                <path
+                    d="M12,21q-3.75,0-6.38-2.63T3,12T5.63,5.63T12,3q0.35,0 0.69,0.02q0.34,0.02 0.66,0.07q-1.03,0.73-1.64,1.89T11.1,7.5q0,2.25 1.57,3.82T16.5,12.9q1.38,0 2.53-0.61t1.88-1.64q0.05,0.33 0.07,0.66T21,12q0,3.75-2.63,6.38T12,21Z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#e3e3e3">
+                <path
+                    d="M12,23.3L8.65,20H4V15.35L0.7,12L4,8.65V4H8.65L12,0.7L15.35,4H20V8.65L23.3,12L20,15.35V20H15.35L12,23.3Z" />
+            </svg>
+        </button>
+        <button type="button" id="cart-btn" class="cart-trigger-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#e3e3e3">
+                <path
+                    d="M5.59,21.41Q5,20.83 5,20t0.59-1.41T7,18q0.83,0 1.41,0.59Q9,19.18 9,20T8.41,21.41Q7.83,22 7,22T5.59,21.41Zm10,0Q15,20.83 15,20t0.59-1.41T17,18t1.41,0.59Q19,19.18 19,20t-0.59,1.41T17,22t-1.41-0.59ZM5.2,4H19.95q0.57,0 0.88,0.51t0.02,1.04l-3.55,6.4q-0.27,0.5-0.74,0.78T15.55,13H8.1L7,15H19v2H7q-1.13,0-1.7-0.99q-0.58-0.99-0.05-1.96L6.6,11.6L3,4H1V2H4.25L5.2,4Z" />
+            </svg> (<span id="cart-count">0</span>)
+        </button>
+        <h1>TradersHub</h1>
+        <img src="Images/toxmendoza-pokeball-5128709_640.jpg" alt="TradersHub store Banner">
+        <p>Trade - Collect - Play</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="trade-in.html" class="active">Trade-In</a></li>
+                <li><a href="collectibles.html">Collectibles</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="trade-in-section">
+            <h2>Trade-In Your Cards</h2>
+            <p>Turn your extra cards and collectibles into store credit or cash</p>
+
+            <div class="trade-in-top">
+                <div class="trade-in-logo">
+                    <img src="Images/download.jpg" alt="TradersHub Logo placeholder">
+                </div>
+
+                <form class="trade-in-form">
+                    <h3>Submit a Trade-In Request</h3>
+
+                    <div class="trade-in-form-row">
+                        <div class="trade-in-form-group">
+                            <label for="card-name">Card Name</label>
+                            <input type="text" id="card-name" name="card-name" placeholder="Card Name?">
+                        </div>
+                        <div class="trade-in-form-group">
+                            <label for="condition-dropdown">Card Condition</label>
+                            <select id="condition-dropdown" name="condition-dropdown">
+                                <option value="" disabled selected>Select Condition</option>
+                                <option value="mint">Mint</option>
+                                <option value="near-mint">Near Mint</option>
+                                <option value="slightly-used">Slightly Used</option>
+                                <option value="damaged">Damaged</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="trade-in-form-group">
+                        <label for="asking-price">Asking Price</label>
+                        <input type="text" id="asking-price" name="asking-price" placeholder="Asking Price?">
+                    </div>
+
+                    <div class="trade-in-form-group">
+                        <label for="contact-email">Your Email</label>
+                        <input type="email" id="contact-email" name="contact-email" placeholder="Your Email">
+                    </div>
+
+                    <div class="trade-in-form-group">
+                        <label for="card-details">Card Details</label>
+                        <textarea id="card-details" name="card-details" rows="4"
+                            placeholder="List card details here..."></textarea>
+                    </div>
+
+                    <div class="trade-in-form-actions">
+                        <input type="file" id="upload-image" name="upload-image" style="display: none;">
+                        <button type="button" class="upload-image"
+                            onclick="document.getElementById('upload-image').click();">Upload Image</button>
+                        <button type="submit" class="submit-button">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="verification-section">
+                <div class="verification-image">
+                    <img src="Images/team.jpg" alt="Verification team image">
+                </div>
+                <div class="verification-text">
+                    <h3>The Verification Team</h3>
+                    <p>Breaking down the process</p>
+                    <ul>
+                        <li>Bring or courier your card to our verification team.</li>
+                        <li>We inspect your card condition, rarity, and current market value.</li>
+                        <li>Receive an offer based on our grading. If unsatisfied, we will return your card at no extra
+                            charge.</li>
+                        <li>Offers can be redeemed instantly for in-store credit or payout sent in 1-2 business days.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>TradersHub</h2>
+        <p>Trade - Collect - Play</p>
+        <p>&copy; 2026 TradersHub. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
